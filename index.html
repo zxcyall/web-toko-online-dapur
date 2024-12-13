@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <style>
+        /* Reset dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body dan font */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f3f3f3;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            color: #333;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 0; /* Reset padding untuk hero */
+        }
+
+        .hero-image {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-image .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.4); /* Overlay gelap untuk kontras teks */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-image .overlay h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero-image .overlay p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-image .overlay .btn {
+            background-color: #ff6347; /* Warna tombol menarik */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-image .overlay .btn:hover {
+            background-color: #e55337;
+        }
+
+        /* Produk Section */
+        .produk {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .produk h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .produk-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .produk-item {
+            background: #f9f9f9;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .produk-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .produk-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .produk-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .produk-item p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .produk-item .btn {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .produk-item .btn:hover {
+            background-color: #888;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alat Dapur Elegan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Primora Culinary Shop</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="ss.jpg" alt="Alat Dapur">
+                <div class="overlay">
+                    <h2>Lengkapi Dapur Anda dengan Elegan</h2>
+                    <p>Set Alat Dapur Premium untuk kenyamanan memasak sehari-hari.</p>
+                    <a href="#produk" class="btn">Lihat Produk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="produk">
+        <h2>Produk Unggulan</h2>
+        <div class="produk-container">
+            <div class="produk-item">
+                <img src="wajan.webp" alt="Wajan Set">
+                <h3>Wajan Set Premium</h3>
+                <p>Material anti lengket, tahan lama, dan elegan untuk dapur Anda.</p>
+                <button class="btn">Pesan Sekarang</button>
+            </div>
+            <div class="produk-item">
+                <img src="pisau.webp" alt="Pisau Set">
+                <h3>Pisau Set Stainless</h3>
+                <p>Pisau tajam dengan desain modern dan kualitas terbaik.</p>
+                <button class="btn">Pesan Sekarang</button>
+            </div>
+            <div class="produk-item">
+                <img src="blender.webp" alt="Blender">
+                <h3>Blender Multifungsi</h3>
+                <p>Blender canggih dengan kapasitas besar untuk berbagai kebutuhan.</p>
+                <button class="btn">Pesan Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Primora Culinary Shop
+            | Semua hak cipta dilindungi</p>
+    </footer>
+</body>
+
+</html>
